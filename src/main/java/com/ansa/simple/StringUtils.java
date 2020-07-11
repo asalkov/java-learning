@@ -8,8 +8,19 @@ import java.util.Map;
 public class StringUtils {
 
     public static int countSymbolInString(String input, char ch) {
+        if (input==null){
+            throw new IllegalArgumentException();
+
+        }
+        int count=0;
+        for (int index=0;index<input.length();index++){
+            if (input.charAt(index)==ch){
+                count++;
+            }
+        }
+
         //implementation here
-        return 0;
+        return count;
     }
 
     public static Map<Character, Integer> countSymbols(String input){
