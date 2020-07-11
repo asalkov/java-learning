@@ -23,8 +23,8 @@ public class StringUtilsTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void exception(){
-        int num = StringUtils.countSymbolInString(null, 'a');
-        Assert.assertEquals(3, num);
+       StringUtils.countSymbolInString(null, 'a');
+
     }
 
 
