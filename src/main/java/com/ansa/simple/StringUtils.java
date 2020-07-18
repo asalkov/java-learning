@@ -24,7 +24,24 @@ public class StringUtils {
     }
 
     public static Map<Character, Integer> countSymbols(String input){
-        return new HashMap<>();
+        Map<Character,Integer> charCounter=new HashMap<Character,Integer>();
+        int count=0;
+        char[]char_array =input.toCharArray();
+        char ch = char_array[count];
+        for(int i=0;i<input.length();i++)
+        {
+            if(charCounter.containsKey(char_array[i]))
+            {
+                charCounter.put(ch, charCounter.get(ch)+1);
+            }
+            else
+            {
+                charCounter.put(ch, 1);
+            }
+        }
+
+
+        return charCounter;
     }
 
     public static List<String> getTopLongStrings(List<String> input, int topNumber){
