@@ -27,13 +27,14 @@ public class StringUtils {
         Map<Character,Integer> charCounter=new HashMap<Character,Integer>();
         int count=0;
         char[]char_array =input.toCharArray();
-        char ch = char_array[count];
 
-        for(int i=0;i<input.length();i++)
+
+        for(char ch: char_array)
         {
-            if(charCounter.containsKey(char_array[i]))
+            if(charCounter.containsKey(ch))
             {
                 charCounter.put(ch, charCounter.get(ch)+1);
+
             }
             else
             {
