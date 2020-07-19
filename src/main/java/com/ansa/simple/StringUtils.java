@@ -28,6 +28,7 @@ public class StringUtils {
         int count=0;
         char[]char_array =input.toCharArray();
         char ch = char_array[count];
+
         for(int i=0;i<input.length();i++)
         {
             if(charCounter.containsKey(char_array[i]))
